@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-csears-tenant/devfile-sample-python-basic/devfile-sample-python-basic@sha256:3c1ac66df90724f5c2dc833e1a899d1dbe143dc3c5acb9d95267387f35bc0e44
+        name: my-python
+        resources: {}
+status: {}
